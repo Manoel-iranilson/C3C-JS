@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C3C</title>
 </head>
+
 <body>
-    <h1>C3C</h1> 
+    <h1>C3C</h1>
     <!-- Questão 01 -->
     <div>
-    <h2>Questão 01 - Tipos de Triângulo</h2>
-    L1 : <input type="number" name="lado01" id="lado01" placeholder="Digite o tamanho do 1° lado" />
-    L2 : <input type="number" name="lado02" id="lado02"  placeholder="Digite o tamanho do 2° lado"/>
-    L3 : <input type="number" name="lado03" id="lado03" placeholder="Digite o tamanho do 3° lado" />
-    <input type="button" value="Verificar" onclick="Verificar()"/>
-    <div id="foto"></div>
+        <h2>Questão 01 - Tipos de Triângulo</h2>
+        L1 : <input type="number" name="lado01" id="lado01" placeholder="Digite o tamanho do 1° lado" />
+        L2 : <input type="number" name="lado02" id="lado02" placeholder="Digite o tamanho do 2° lado" />
+        L3 : <input type="number" name="lado03" id="lado03" placeholder="Digite o tamanho do 3° lado" />
+        <input type="button" value="Verificar" onclick="Verificar()" />
+        <div id="foto"></div>
+    </div>
+    <!-- Questão 02 -->
+    <div>
+        <h2>Questão 02 - Formula de baskara</h2>
+        <h3>Digite os 3 parametros para resove as formulas</h3>
+        A : <input type="number" name="A" id="A" placeholder="Digite o parametro ax2" />
+        B : <input type="number" name="B" id="B" placeholder="Digite o parametro bx" />
+        C : <input type="number" name="C" id="C" placeholder="Digite o parametro C" />
+        <input type="button" value="Resolver formula" onclick="ResolverFormula()" />
+        <h3>
+            <div id="res02"></div>
+        </h3>
+    </div>
+    <!-- Questão 03 -->
+    <div>
+
+        <h2>Questão 03 - Sistema de Notas</h2>
+        Nota: <input type="number" name="Nota" id="Nota" placeholder="Digite a nota entre 0 e 100" min="0" max="100"
+            style="width:10rem;" />
+        <input type="button" value="Verificar Nota" onclick="VerificarNota()" />
+        <h3> Seu resultado será apresentado abaixo:</h3>
+        <div id="res"></div>
+    </div>
+    <!-- Questão 04 -->
+    <div>
+        <h2>Questão 04 - LuidyMoura</h2>
+        Digite um numero: <input type="number" name="numero" id="numero" placeholder="Digite um numero"
+            style="width:10rem;" />
+        <input type="button" value="Gerar" onclick="Gerar()" />
+
+        <h4>
+            <div id="res04"></div>
+        </h4>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
