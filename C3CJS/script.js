@@ -4,26 +4,28 @@ Verificar = () => {
   const lado02 = document.getElementById("lado02");
   const lado03 = document.getElementById("lado03");
 
+  const title = document.getElementById("title");
   const foto = document.getElementById("foto");
   const img = document.createElement("img");
 
   foto.innerHTML = "";
+  title.innerHTML = "";
   if (lado01.value == "" || lado02.value == "" || lado03 == "") {
     return alert("preencha todos os dados");
   }
 
   if (lado01.value == lado02.value && lado03.value == lado02.value) {
-    console.log("Equilatero");
+    title.innerHTML = "Equilatero";
     img.setAttribute("src", "../C3CJS/assents/Equilatero.jpg");
   } else if (
     lado01.value == lado02.value ||
     lado03.value == lado02.value ||
     lado01.value == lado03.value
   ) {
-    console.log("isosceles");
+    title.innerHTML = "isosceles";
     img.setAttribute("src", "../C3CJS/assents/Isosceles.jpg");
   } else {
-    console.log("Escaleno");
+    title.innerHTML = "Escaleno";
     img.setAttribute("src", "../C3CJS/assents/Escaleno.jpg");
   }
   foto.appendChild(img);
