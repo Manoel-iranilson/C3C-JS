@@ -14,17 +14,17 @@ Verificar = () => {
 
   if (lado01.value == lado02.value && lado03.value == lado02.value) {
     console.log("Equilatero");
-    img.setAttribute("src", "../Questao01/assents/Equilatero.jpg");
+    img.setAttribute("src", "../C3C-JS/assents/Equilatero.jpg");
   } else if (
     lado01.value == lado02.value ||
     lado03.value == lado02.value ||
     lado01.value == lado03.value
   ) {
     console.log("isosceles");
-    img.setAttribute("src", "../Questao01/assents/Isosceles.jpg");
+    img.setAttribute("src", "../C3C-JS/assents/Isosceles.jpg");
   } else {
     console.log("Escaleno");
-    img.setAttribute("src", "../Questao01/assents/Escaleno.jpg");
+    img.setAttribute("src", "../C3C-JS/assents/Escaleno.jpg");
   }
   foto.appendChild(img);
 };
@@ -95,9 +95,12 @@ Gerar = () => {
   const numero = document.getElementById("numero");
   const res04 = document.getElementById("res04");
   res04.innerHTML = "";
+
   Questao = (valor) => {
     let conta = [];
-
+    if (valor <= 0) {
+      return alert("numero tem que ser positivo(acima de 0)");
+    }
     for (let i = 1; i <= valor; i++) {
       if (i % 5 !== 0 && i % 9 !== 0) {
         conta.push(i);
