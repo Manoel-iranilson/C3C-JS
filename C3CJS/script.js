@@ -14,17 +14,17 @@ Verificar = () => {
 
   if (lado01.value == lado02.value && lado03.value == lado02.value) {
     console.log("Equilatero");
-    img.setAttribute("src", "../C3C-JS/assents/Equilatero.jpg");
+    img.setAttribute("src", "../C3CJS/assents/Equilatero.jpg");
   } else if (
     lado01.value == lado02.value ||
     lado03.value == lado02.value ||
     lado01.value == lado03.value
   ) {
     console.log("isosceles");
-    img.setAttribute("src", "../C3C-JS/assents/Isosceles.jpg");
+    img.setAttribute("src", "../C3CJS/assents/Isosceles.jpg");
   } else {
     console.log("Escaleno");
-    img.setAttribute("src", "../C3C-JS/assents/Escaleno.jpg");
+    img.setAttribute("src", "../C3CJS/assents/Escaleno.jpg");
   }
   foto.appendChild(img);
 };
